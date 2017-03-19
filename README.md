@@ -20,13 +20,13 @@ OAuth defines four roles:
 
 
 
-redirect uri :
+### redirect uri :
 service will redirect user after authorize or (deny) ,and therefore the part of ypur app will andle authorization codes or access token.
 
 # Client ID and Client Secret
-service will issue client credentials.
-ClientID :is a publicly exposed string that is used by the service API to identify the application
-client credential:used to authenticate the identity of the application to the service API when the application requests to access a user's account, and must be kept private between the application and the API
+Once your application is registered, the service will issue "client credentials" in the form of a client identifier and a client secret. The Client ID is a publicly exposed string that is used by the service API to identify the application, and is also used to build authorization URLs that are presented to users. The Client Secret is used to authenticate the identity of the application to the service API when the application requests to access a user's account, and must be kept private between the application and the API.
+
+
 
 # Authorization Grant
 In the Abstract Protocol Flow above, the first four steps cover obtaining an authorization grant and access token. The authorization grant type depends on the method used by the application to request authorization, and the grant types supported by the API. OAuth 2 defines four grant types, each of which is useful in different cases:
